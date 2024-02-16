@@ -1,0 +1,8 @@
+web3
+ecdsa
+sha3
+coincurve
+eth_account
+eth_utils
+eth_keys
+eth_utils
