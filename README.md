@@ -1,6 +1,6 @@
 # Overview
-Gnosis Safe's are a blockchain account abstraction product that replaces EOA wallets with a smart contract. The problem is, when decoding the log events of a Safe's transactions you can't easily pull details such as signers. 
+A Safe (known as a Gnosis Safe) is a smart contract that acts as a wallet. Safe's offer far better security and functionality compared to legacy EOA blockchain wallets. The problem is, it's extremely hard to get key information such as signers modules from a Safe's on-chain log events.  
 
-The `./decoder.py` file enables you to input a message hash and decode the signers of the transaction. Now, using this decoder, you can easily determine the addresses associated with creating a Safe, sending money from Safe, or adding smart contract functionality to the Safe. 
+The `./decoder.py` file enables you to input a message hash and decode the signers of a Safe transaction; easily decoding the ECDSA signature to tell you the exact wallets responsible for a Safe's transaction. 
 
-For more details on how this decoder works, I suggest reading how Gnosis Safe encodes the transaction details into a message hash [here](https://docs.safe.global/smart-account-signatures). 
+For more details on how this decoder works, I suggest reading how Gnosis Safe encodes the transaction details into a ECDSA signature [here](https://docs.safe.global/smart-account-signatures). 
